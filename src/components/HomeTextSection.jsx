@@ -1,6 +1,6 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
-import illustation from "../assets/Frame.svg";
+import illustation from "../assets/image 1.png";
 import line from "../assets/line.png";
 
 import rocket from "../assets/fluent_rocket-24-filled.png";
@@ -24,10 +24,10 @@ const HomeTextSection = () => {
   return (
     <section
       id="home"
-      className="  relative  md:px-12 m-0 justify-between items-center   max-w-8xl  gap-1   mx-auto  ">
+      className="  relative  md:px-16 md:mx-6 max-w-8xl m-0 justify-between items-center     gap-1   mx-auto  ">
 
       <div className="grid grid-cols-1    xl:grid-cols-2 lg:grid-cols-2 p-0 m-0">
-      <div className=" flex justify-center  order-last md:order-first img-dev align-center"><img src={illustation}/></div>
+      <div className=" flex     order-last md:order-first img-dev align-center  "><img src={illustation} /></div>
       <div className=" p-4 md:mt-24 mt-9 text-dev md:py-12 ">
       <div className="  px-4 py-4  mb-12   relative flex flex-col  justify-between items-center   gap-8    ">
 

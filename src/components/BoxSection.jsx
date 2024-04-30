@@ -40,7 +40,7 @@ const BoxSection = () => {
   return (
     <div
       dir="rtl"
-      className=" grid  text-[#001B79] font-normal text-[22px]  justify-center align-center px-8 bg-[transparent] mt-[40px] z-0 md:grid-cols-1 max-w-screen-xl mx-auto"
+      className=" grid  text-[#001B79] font-normal text-[22px]  justify-center align-center px-8 bg-[transparent] mt-[40px] z-0 md:grid-cols-1 md:px-16 md:mx-8 max-w-8xl mx-auto"
     >
       <div className=" overflow-hidden py-5  justify-center align-center text-center lg:text-start flex flex-col gap-12 rounded-[12px] bg-[#5225CE] border-none">
         <h3 className="text-center py-3 text-white pb-0">
@@ -54,7 +54,7 @@ const BoxSection = () => {
                   <img src={item.image} className="w-[50px] h-[50px] " alt="timer" />
                 </div>
                 <div className=" font-thin md:col-span-11 col-span-12  md:p-0 py-2  mt-5  p-5  leading-[0.75rem]">
-                  <span className="md:text-[16px] text-[10px]">{item.text}</span>{" "}
+                  <span className="md:text-[18px] text-[10px]">{item.text}</span>{" "}
                 </div>
               </div>
             </div>
