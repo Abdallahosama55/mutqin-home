@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import chapter from "../assets/forgetSection/files.png";
 // import chapter from "../assets/chapter 1 1.png";
 // import ai from "../assets/eos-icons_ai.png";
-import ai from "../assets/eos-icons_ai.png";
+import ai from "../assets/forgetSection/aii (2).png";
 // import ri from "../assets/ri_pen-nib-fill.png";
 import ri from "../assets/ri_pen-nib-fill.png";
 // import fa from "../assets/fa6-solid_file-pen.png";
