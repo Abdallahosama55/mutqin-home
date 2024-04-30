@@ -24,7 +24,7 @@ const HomeTextSection = () => {
   return (
     <section
       id="home"
-      className="  relative  p-0 m-0 justify-between items-center   max-w-7xl  gap-1   mx-auto  ">
+      className="  relative  md:px-16 m-0 justify-between items-center   max-w-8xl  gap-1   mx-auto  ">
 
       <div className="grid grid-cols-1    xl:grid-cols-2 lg:grid-cols-2 p-0 m-0">
       <div className=" flex justify-center  order-last md:order-first img-dev align-center"><img src={illustation}/></div>
@@ -33,7 +33,7 @@ const HomeTextSection = () => {
 
         <h1
           dir="rtl"
-          className="   flex  lg:pe-12 line-h1-height  pe-4 items-center flex-wrap justify-center text-2xl leading-10 sm:text-[32px]  text-[#5225CE]  ">
+          className="   flex  lg:pe-16 line-h1-height  pe-4 items-center flex-wrap justify-center md:text-4xl leading-10 sm:text-[32px]  text-[#5225CE]  ">
           مساحتك اللانهائية من الإبداع لتحسين إنتاجية عملك!
         </h1>
         <div className="text-md  font-medium text-[#001B79]">

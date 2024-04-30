@@ -141,7 +141,7 @@ const Packages = () => {
        
         <div
           style={{ transitionDuration: "1000ms", transitionDelay: "500ms" }}
-          className=" mt-10 max-w-[1200px]      md:space-x-0  px-4  mx-auto md:grid md:grid-cols-2  lg:grid-cols-4  md:justify-between gap-6 ">
+          className=" mt-10 max-w-[1200px]      md:space-x-0  px-4  mx-auto lg:flex lg:grid-cols-4  md:grid-cols-2   md:justify-between gap-6 ">
           <div
             className={`flex relative     bg-transparent  mb-4 lg:mb-0      h-full    flex-col    text-start    rounded-[18px] border-[1.8px]  border-opacity-[20%]  border-[#6E4CCD66]   bg-white      text-primary   `}>
             {/* <div className=" flex justify-end w-full   ">
@@ -457,10 +457,10 @@ const Packages = () => {
             </ul>
           </div>
           <div
-            className={`flex relative     bg-transparent  mb-4 lg:mb-0      h-full    flex-col    text-start    rounded-[18px] border-[5px]    border-[#7238F0]   bg-white      text-primary   `}>
+            className={`flex  relative h-[620px]  bottom-[10px] bg-transparent  mb-4 lg:mb-0      h-full    flex-col    text-start    rounded-[18px] border-[5px]    border-[#7238F0]   bg-white      text-primary   `}>
             <img
             src={tag}
-            className=" absolute z-3 lg:right-[70%] xl:right-[70%] md:right-[77.8%] md:max-w-[100px] top-[2%] right-[82%] max-w-[85px]  right-[10px]"
+            className=" absolute  z-3 lg:right-[70%] xl:right-[70%] md:right-[77.8%] md:max-w-[100px] top-[2%] right-[82%] max-w-[85px]  right-[10px]"
           />
             <div className="  flex   gap-4 bg-[#7238F0] rounded-t-[10px]   text-white text-lg  font-medium text-start p-4  py-5     items-start    w-full">
               <img

@@ -64,26 +64,7 @@ const BlocksSection = () => {
               تطبيقنا.
             </p>
           </div>
-          <div
-            id="block-container"
-            dir="rtl"
-            className="border-2 grid grid-rows-4 text-start p-8 md:pb-8 pb-20 sm:w-[350px] text-black h-[400px] bg-[#ffffff] rounded-[10px] border-[#f0f0f1]">
-            <figure className="row-span-2 flex justify-center items-center">
-              <img
-                className="max-h-40"
-                src={chatimage}
-                alt=""
-              />
-            </figure>
-            <h2 className="row-span-1 text-secondary my-auto text-[20px] font-bold">
-              مدعوم من <span className=" font-sans font-bold">ChatGPT</span>
-            </h2>
-            <p className="row-span-1  mb-2 text-[14px] font-light">
-              تطبيقنا مدعوم من{" "}
-              <span className=" font-sans font-normal">ChatGPT،</span> وهو نموذج
-              لغة متطور يُعرف بأنه أحد أكثر النماذج تقدمًا في العالم.
-            </p>
-          </div>
+    
           <div
             id="block-container"
             dir="rtl"
@@ -105,48 +86,8 @@ const BlocksSection = () => {
               عمليات بحث على الويب في الوقت الفعلي، وتقديم معلومات دقيقة وحديثة.
             </p>
           </div>
-          <div
-            id="block-container"
-            dir="rtl"
-            className="border-2 grid grid-rows-4 text-start p-8 md:pb-8 pb-20 sm:w-[350px] text-black h-[400px] bg-[#ffffff] rounded-[10px] border-[#f0f0f1]">
-            <figure className="row-span-2 flex justify-center items-center">
-              <img
-                className="max-h-40"
-                src={icon5}
-                alt=""
-              />
-            </figure>
-            <h2 className="row-span-1 text-secondary my-auto text-[20px] font-bold">
-              سجل دقيق
-            </h2>
-            <p className="row-span-1  mb-2 text-[14px] font-light">
-              يمتلك كل من{" "}
-              <span className=" font-sans  font-normal">ChatGPT</span> و
-              <span className=" font-sans font-normal">Google PaLM 2</span>{" "}
-              <span className=" font-medium font-sans"></span> القدرة على تذكر
-              المواضيع السابقة، مما يضمن استمرارية المحادثة بشكل سلس ومتماسك.
-            </p>
-          </div>
-          <div
-            id="block-container"
-            dir="rtl"
-            className="border-2  bg-white    grid grid-rows-4 text-start p-8 md:pb-8 pb-20 sm:w-[350px] text-black h-[400px] bg-[#ffffff] rounded-[10px] border-[#f0f0f1]">
-            <figure className="row-span-2 flex justify-center items-center">
-              <img
-                className="max-h-40"
-                src={icon6}
-                alt=""
-              />
-            </figure>
-            <h2 className="row-span-1 text-secondary my-auto text-[20px] font-bold">
-              التوافق عبر الأنظمة الأساسية
-            </h2>
-            <p className="row-span-1  mb-2 text-[14px] font-light">
-              يمكن الوصول إلي تطبيقنا عبر أجهزة الويب{" "}
-              <span className=" font-sans font-normal">وiOS</span>{" "}
-              <span className=" font-sans font-normal">وAndroid</span>.
-            </p>
-          </div>
+      
+
           <div
             id="block-container"
             dir="rtl"
