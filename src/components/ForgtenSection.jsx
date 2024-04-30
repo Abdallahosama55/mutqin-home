@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import chapter from "../assets/forgetSection/files.png";
 // import chapter from "../assets/chapter 1 1.png";
 // import ai from "../assets/eos-icons_ai.png";
-import ai from "../assets/forgetSection/aii (2).png";
+import ai from "../assets/forgetSection/Ai.png";
 // import ri from "../assets/ri_pen-nib-fill.png";
 import ri from "../assets/ri_pen-nib-fill.png";
 // import fa from "../assets/fa6-solid_file-pen.png";
@@ -10,7 +10,7 @@ import fa from "../assets/forgetSection/fa6-solid_file-pen.png";
 import ma from "../assets/forgetSection/Frame 1171276676.png";
 // import ma from "../assets/material-symbols-light_photo-library-rounded.png";
 
-import chat from "../assets/chat0.png";
+import chat from "../assets/forgetSection/aii (2).png";
 import content from "../assets/content.png";
 import detector from "../assets/detector.png";
 import article from "../assets/article.png";
