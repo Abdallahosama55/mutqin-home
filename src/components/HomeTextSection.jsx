@@ -33,7 +33,7 @@ const HomeTextSection = () => {
 
         <h1
           dir="rtl"
-          className="   flex  lg:pe-16 line-h1-height  pe-4 items-center flex-wrap justify-center md:text-4xl leading-10 sm:text-[32px]  text-[#5225CE]  ">
+          className="   flex  lg:pe-16 line-h1-height  pe-4 items-center flex-wrap justify-center lg:text-4xl md:text-4xl xl:text-4xl text-2xl leading-10 sm:text-[32px]  text-[#5225CE]  ">
           مساحتك اللانهائية من الإبداع لتحسين إنتاجية عملك!
         </h1>
         <div className="text-md  font-medium text-[#001B79]">
