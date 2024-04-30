@@ -1,0 +1,30 @@
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+
+
+}
+.home-section1{
+background: linear-gradient(180deg, rgba(82, 37, 206, 0.2) 40.97%, rgb(247, 247, 250) 100%);
+  ;
+}
+
+.line-h1-height {
+  line-height: 3rem !important;
+}
+.bg-1{
+  background-color: #DCFFEF !important;
+}
+.bg-2{
+  background-color: #FFEBFD !important;
+}
+.bg-3{
+  background-color: #CBE3FA !important;
+}
+.bg-4{
+  background-color: #EBF1FF !important;
+}
+.home{
+  padding: 0px !important;
+  margin: 0px !important;
+}

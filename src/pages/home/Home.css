@@ -1,0 +1,206 @@
+* {
+  scroll-behavior: smooth !important;
+}
+.pop-container {
+  position: relative;
+}
+
+.pop {
+  transform: scale(1.2);
+  transition: ease-out;
+}
+.parent:hover .child-button {
+  background-color: white;
+  color: #001a78;
+  cursor: pointer;
+}
+.parent:hover .child-rock {
+  display: block;
+}
+.textshadow {
+  font-size: 3rem;
+  line-height: 1.2;
+  text-shadow: 0px 2px 2px #646464;
+}
+.parent:hover .child-without {
+  opacity: 0;
+}
+.chat-shadow {
+  box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 0.05);
+}
+
+.navbackground {
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(220, 238, 112, 0.1741946778711485) 62%,
+    rgba(235, 89, 177, 0.34226190476190477) 70%,
+    rgba(188, 57, 249, 0.2666316526610645) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.firstStep {
+  font-size: 38px !important;
+  padding: 0px 0 0 0px !important;
+}
+.lineHieght-Custom1 {
+  line-height: 55px !important;
+}
+.lineHieght-Custom2 {
+  line-height: 50px !important;
+  font-size: 33px !important;
+}
+.custom-mobilesection-text {
+  line-height: 36px !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+.lineHieght-Custom {
+  line-height: 55px !important;
+}
+
+.lineHieght-Custom-Header {
+  line-height: 45px;
+}
+
+.custom-SHadow {
+  box-shadow: 10px 10px 45px 0px #0000001a;
+}
+.backgroundImage-3 {
+  background-image: url("../../assets/Frame3.png");
+  object-fit: cover;
+}
+
+.unselectable {
+  user-select: none;
+}
+.custom-word-spacing {
+  word-spacing: 0.4em;
+}
+.homebackground {
+  background: linear-gradient(
+    15deg,
+    rgba(255, 255, 255, 1) 45%,
+    rgba(220, 238, 112, 0.1741946778711485) 72%,
+    rgba(235, 89, 177, 0.34226190476190477) 87%,
+    rgba(188, 57, 249, 0.2666316526610645) 95%
+  );
+}
+
+@media (min-width: 650px) {
+  .nav-shadow {
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 0.05);
+  }
+}
+@media (max-width: 650px) {
+  .lineHieght-Custom {
+    line-height: normal !important;
+  }
+  .lineHieght-Custom1 {
+    line-height: normal !important;
+  }
+  .firstStep {
+    font-size: 22px !important;
+    padding: 15px 0px !important;
+  }
+  .lineHieght-Custom2 {
+    line-height: normal !important;
+  }
+  .lineHieght-Custom-Header {
+    line-height: normal !important;
+  }
+}
+.scale-image-child {
+  border-radius: 20px;
+}
+
+/* Start Boxs */
+
+.scaleParent:hover .scale-image-child {
+  transform: translateY(25%) scale(1.8) !important;
+  transition-duration: 400ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.back-ground-blur {
+  border-radius: 20px !important;
+}
+.scaleParent:hover .back-ground-blur {
+  position: absolute;
+  z-index: 20;
+  background-color: #6f6f6fb6;
+  transform: scale(2.5);
+  transition-duration: 500ms;
+  transition-property: scale;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  border-radius: 20px !important;
+  backdrop-filter: blur(0.8px);
+  height: 100%;
+}
+.text-ground-blur {
+  user-select: none;
+}
+
+.scaleParent:hover .text-ground-blur {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 50;
+  color: white;
+}
+.scaleParent:hover .text-ground-text {
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 50;
+  color: white;
+}
+
+/* End Boxs */
+
+/* Home Start */
+.blurChild:hover {
+  backdrop-filter: blur(5px);
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+}
+
+.parentGraph:hover .graphChild {
+  display: block;
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+}
+.graphChild {
+  display: none;
+}
+
+/* Home Start */
+
+/* Information section */
+.scroll-information::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+.scroll-information::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+.scroll-information::-webkit-scrollbar-thumb {
+  background: #8888884a; /* Color of the handle */
+}
+
+/* Handle on hover */
+.scroll-information::-webkit-scrollbar-thumb:hover {
+  background: #8a8a8a67; /* Color of the handle on hover */
+}
+/* Information section */
