@@ -1,6 +1,6 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
-import illustation from "../assets/image 1.png";
+import illustation from "../assets/illustrationhigh.png";
 import line from "../assets/line.png";
 
 import rocket from "../assets/fluent_rocket-24-filled.png";
@@ -24,12 +24,12 @@ const HomeTextSection = () => {
   return (
     <section
       id="home"
-      className="  relative  md:px-16 md:mx-6 max-w-8xl m-0 justify-between items-center     gap-1   mx-auto  ">
+      className="  relative lg:w-[86%] xl:w-[86%] w-[100%] mt-6     mx-auto  ">
 
       <div className="grid grid-cols-1    xl:grid-cols-2 lg:grid-cols-2 p-0 m-0">
-      <div className=" flex     order-last md:order-first img-dev align-center  "><img src={illustation} /></div>
-      <div className=" p-4 md:mt-24 mt-9 text-dev md:py-12 ">
-      <div className="  px-4 py-4  mb-12   relative flex flex-col  justify-between items-center   gap-8    ">
+      <div className=" flex     order-last md:order-first img-dev align-center relative  "> <Link  className=" z-15  top-[79%] left-[55%] bg-transparent  ps-32 py-6  absolute " to="https://auth.mutqinai.com/signup"></Link><img src={illustation} /></div>
+      <div className=" p-4 md:mt-[20%] mt-9 text-dev md:py-12 ">
+      <div className="  px-5 py-4  mb-12   relative flex flex-col  justify-between items-center   gap-8    ">
 
         <h1
           dir="rtl"
@@ -53,14 +53,14 @@ const HomeTextSection = () => {
         validationSchema={validationSchema}
         onSubmit={onSubmit}>
         <Form>
-          <div className="gap-0  border-[1px] border-[#692BEF33] relative z-30 justify-between      py-1 sm:gap-4 px-4 items-center  sm:justify-between sm:px-4 flex   rounded-[10px]">
+          <div className="gap-3  text-center  border-[1px] border-[#692BEF33] relative z-19 justify-between      py-1 sm:gap-4 px-4 items-center  sm:justify-between sm:px-4 flex   rounded-[10px]">
             <Link
               to="http://auth.mutqinai.com/#/signup"
               // type="submit"
               className="relative   hover:bg-[#5225cedb]    px-10   py-1  sm:py-2 sm:px-[55px] text-white bg-[#5225CE] rounded-[10px] ">
               <img
                 src={rocket}
-                className=" sm:block    w-6 h-6 sm:w-[32px]  sm:h-[32px] absolute top-[4px] left-[70px] sm:top-[5px] sm:left-[90px]"
+                className=" sm:block   me-7  w-6 h-6 sm:w-[32px]  sm:h-[32px] absolute top-[4px] left-[70px] sm:top-[5px] sm:left-[90px]"
               />
               بدء
             </Link>

@@ -34,8 +34,8 @@ const Navbar = () => {
     <nav
       id="nav"
       dir="rtl"
-      className="    pt-0 top-[-5px]     w-full            z-50     mx-auto  ">
-      <div className=" max-w-screen-xl   md:mx-2  z-50 border-[#5225CE33] sm:border-[1px]   bg-transparent        relative     md:rounded-[10px] flex  items-center justify-between xl:mx-auto p-4">
+      className="  flex justify-center   pt-0 top-[-5px]     w-full            z-19    mx-auto  ">
+      <div className="lg:w-[82%] xl:w-[82%] w-[100%]      mx-auto   z-19 border-[#5225CE33] sm:border-[1px]   bg-transparent        relative     md:rounded-[10px] flex  items-center justify-between p-4">
         {/* <div className=" max-w-screen-xl   md:mx-2  z-50 nav-shadow   bg-transparent        relative     md:rounded-[10px] flex  items-center justify-between xl:mx-auto p-4"> */}
         <Link
           to="#"

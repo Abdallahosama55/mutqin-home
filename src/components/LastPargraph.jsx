@@ -38,7 +38,7 @@ const LastPargraph = () => {
             مع مُتقِن، ستستفيد من أحدث التقنيات في مجال الذكاء الاصطناعي لتحسين
             تجربة المستخدم وزيادة جاذبية محتواك. سواء كنت تقوم بإنشاء مقالات،
             فيديوهات، أو محتوى تفاعلي، فإن{" "}
-            <span className=" font-sans font-bold">SpaceChat</span> يوفر لك
+         متقن يوفر لك
             الأدوات الضرورية لتحقيق أداء استثنائي.
           </p>
           <h2 className="mb-8  text-[19px] tracking-tight    text-[#001B79] opacity-50  font-medium text-center ">

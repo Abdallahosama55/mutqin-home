@@ -105,32 +105,10 @@ const PoweredSection = () => {
             />
           </div>
 
-          {/* <div className=" bg-secondary flex gap-2  w-[150px]   justify-center items-center  px-6 py-[10px]   rounded-[10px]">
-            <img
-              className=" w-[20px] h-[20x] sm:w-[25px] sm:h-[25px] "
-              src={palm}
-            />
-            <p className=" font-sans text-[#FFFFFF] font-medium  text-[10px] text-center   capitalize ">
-              Google PaLM 2
-            </p>
-          </div> */}
+       
         </div>
       </div>
-      <div className=" mt-16">
-        <Slider {...settings}>
-          {horizontalList.map((power, index) => (
-            <div
-              className=" pb-2"
-              key={index}>
-              <button
-                key={index}
-                className=" font-sans  capitalize w-[160px]  py-2 font-[400]    text-[#5225CE]   text-[18px] border-[#5225CE] border-[1px]  rounded-[10px]">
-                {power.title}
-              </button>
-            </div>
-          ))}
-        </Slider>
-      </div>
+  
     </section>
   );
 };

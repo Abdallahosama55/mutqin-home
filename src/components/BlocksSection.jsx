@@ -13,7 +13,7 @@ const BlocksSection = () => {
   return (
     <section
       id="features"
-      className=" pt-[90px]  relative max-w-[350px] sm:max-w-6xl mx-auto mb-[100px] ">
+      className=" pt-[40px]  relative max-w-[350px] sm:max-w-6xl mx-auto mb-[100px] ">
       <h1 className="  text-[#5225CE]  text-center text-[23px] px-2 sm:p-0 sm:text-[38px] font-medium">
         المنصة العربية رقم 1 لاستخدام الذكاء الاصطناعي بفاعلية
       </h1>
@@ -32,11 +32,11 @@ const BlocksSection = () => {
             </figure>
             <h2 className="row-span-1  text-secondary my-auto text-[20px] font-bold">
               متكامل مع جوجل{" "}
-              <span className=" font-sans font-bold">PaLM 2</span>
+              <span className=" font-sans font-bold">Gemini</span>
             </h2>
             <p className="row-span-1  mb-2 text-[14px] font-light">
               يتضمن تطبيقنا{" "}
-              <span className=" font-sans font-normal">Google PaLM 2</span>{" "}
+              <span className=" font-sans font-normal">Gemini</span>{" "}
               بسلاسة، مما يوفر إمكانية الوصول إلى الإنترنت في الوقت الفعلي
               للإجابة على الاستفسارات بناءً على أحدث المعلومات من عمليات بحث{" "}
               <span className=" font-sans font-normal">Google</span>.
@@ -81,8 +81,8 @@ const BlocksSection = () => {
             </h2>
             <p className="row-span-1  mb-2 text-[14px] font-light">
               من خلال الاستفادة من اتصاله بالإنترنت، يستطيع{" "}
-              <span className=" font-sans font-normal">Google</span>{" "}
-              <span className=" font-sans font-normal">PaLM 2</span> إجراء
+       
+              <span className=" font-sans font-normal">Gemini</span> إجراء
               عمليات بحث على الويب في الوقت الفعلي، وتقديم معلومات دقيقة وحديثة.
             </p>
           </div>
@@ -106,7 +106,7 @@ const BlocksSection = () => {
               مع إتقان أكثر من{" "}
               <span className=" font-sans font-normal"> 100 </span> لغة، يظهر{" "}
               <span className=" font-sans font-normal"> ChatGPT </span> و
-              <span className=" font-normal font-sans"> PaLM 2 </span>
+              <span className=" font-normal font-sans"> Gemini </span>
               كنماذج لغوية متعددة الاستخدامات، مما يضمن تغطية لغوية شاملة.
             </p>
           </div>
@@ -126,7 +126,7 @@ const BlocksSection = () => {
             </h2>
             <p className="row-span-1  mb-2 text-[14px] font-light">
               يتفوق <span className="font-sans font-normal">ChatGPT </span>و
-              <span className="font-sans font-normal"> PaLM 2 </span> في تقديم
+              <span className="font-sans font-normal"> Gemini </span> في تقديم
               استجابات مخصصة، والتكيف مع تفضيلات المستخدم والاستفادة من الرؤى من
               التفاعلات السابقة.
             </p>

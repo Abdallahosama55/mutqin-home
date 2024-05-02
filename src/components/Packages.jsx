@@ -90,7 +90,7 @@ const Packages = () => {
       className={`  bg-transparent relative`}>
       <div
         dir="rtl"
-        className={`py-[80px] px-4   z-20  relative mx-auto  lg:py-[80px] lg:px-6`}>
+        className={`py-[80px] px-5  z-20  relative mx-auto  lg:py-[80px] lg:px-6`}>
         <div className="mx-auto max-w-4xl  text-secondary text-center mb-3 ">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold   ">
             الباقات
@@ -474,7 +474,7 @@ const Packages = () => {
               <span
                 dir="ltr"
                 className="mr-2 priceText gap-1  items-baseline flex justify-center   text-[#E8A803]  relative z-0    text-3xl font-bold">
-                <div className="text-[18px] font-light ">شهريًا </div>
+                <div className="text-[18px] font-light font-[900] ">ثلاثة أشهر </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
                   {currency.cur === "EGP" ? "EGP 799":"$ 16.95"}

@@ -10,10 +10,10 @@ import fa from "../assets/forgetSection/fa6-solid_file-pen.png";
 import ma from "../assets/forgetSection/Frame 1171276676.png";
 // import ma from "../assets/material-symbols-light_photo-library-rounded.png";
 
-import chat from "../assets/chat0.png";
-import content from "../assets/content.png";
-import detector from "../assets/detector.png";
-import article from "../assets/article.png";
+import chat from "../assets/forgetSection/chat0 (2).png";
+import content from "../assets/forgetSection/content.png";
+import detector from "../assets/forgetSection/det.png";
+import article from "../assets/forgetSection/art.png";
 import secGirl from "../assets/girl chatting online.png";
 import womanAndMan from "../assets/woman and man working together.png";
 import guyWithbag from "../assets/guy with backpack and laptop.png";

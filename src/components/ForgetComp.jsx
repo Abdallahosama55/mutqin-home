@@ -29,7 +29,7 @@ const ForgetComp = ({ image, pragraph, title,header, button }) => {
         <Link
           to="http://auth.mutqinai.com/#/signup"
           className=" text-center max-w-[175px] md:mr-2  sm:my-0 bg-[#8452EF]  hover:bg-[#7451d4] px-6  py-2 mt-12 md:mt-6  text-white rounded-[10px] ">
-          جرب الآن مجانا
+      جرب الآن مجاناً
         </Link>
       </div>
       <div className="   sm:mt-0 md:col-span-4">
