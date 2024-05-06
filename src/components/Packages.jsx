@@ -90,7 +90,7 @@ const Packages = () => {
       className={`  bg-transparent relative`}>
       <div
         dir="rtl"
-        className={`py-[80px] px-5  z-20  relative mx-auto  lg:py-[80px] lg:px-6`}>
+        className={`py-[0px] px-5  z-20  relative mx-auto  lg:py-[40px] lg:px-6`}>
         <div className="mx-auto max-w-4xl  text-secondary text-center mb-3 ">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold   ">
             الباقات
@@ -247,7 +247,7 @@ const Packages = () => {
             </ul>
           </div>
           <div
-            className={`flex relative     bg-transparent  mb-4 lg:mb-0      h-full    flex-col    text-start    rounded-[18px] border-[2px]   border-[#EB7203]   bg-white      text-primary   `}>
+            className={`flex relative    bg-transparent  mb-4 lg:mb-0      h-full    flex-col    text-start    rounded-[18px] border-[2px]   border-[#EB7203]   bg-white      text-primary   `}>
             {/* <div className=" flex justify-end w-full   ">
               <div className="   text-secondary px-2 py-4 rounded-[12px] bg-white"></div>
             </div> */}

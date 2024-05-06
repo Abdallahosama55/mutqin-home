@@ -34,7 +34,7 @@ const ForgetComp = ({ image, pragraph, title,header, button }) => {
       </div>
       <div className="   sm:mt-0 md:col-span-4">
         <img
-          className=" mt-32 md:mt-3 xl:mt-3 lg:mt-3 w-100 "
+          className=" mt-32   md:mt-0 "
           src={image}
           alt="onemobile"
         />

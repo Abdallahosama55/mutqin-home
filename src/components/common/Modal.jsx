@@ -11,6 +11,7 @@ const Modal = ({ children }) => {
   const [hours, setHours] = useState(4);
   const [minutes, setMinutes] = useState(18);
   const [seconds, setSeconds] = useState(40);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,35 +44,37 @@ const Modal = ({ children }) => {
     console.log("close");
   };
   const features = [
-    { text: "لكتابة مقالات احترافية" },
-    { text: "التدقيق اللغوي والنحوي" },
-    { text: "التحدث مع متقن شات GPT-4"} ,
-    { text: "التسويق عبر البريد الإلكتروني " },
-    { text: "تخطيط استراتيجيات المحتوى" },
-    { text: "التسويق لوسائل التواصل الاجتماعي" },
-    { text: "كتابة وصف المنتجات بشكل جذاب" },
+    { text: " لكتابة مقالات احترافية." },
+    { text: "التدقيق اللغوي والنحوي." },
+    { text: "التحدث مع متقن شات GPT-4."} ,
+    { text: "التسويق عبر البريد الإلكتروني." },
+    { text: "تخطيط استراتيجيات المحتوى." },
+    { text: "التسويق لوسائل التواصل الاجتماعي." },
+    { text: "كتابة وصف المنتجات بشكل جذاب." },
     { text: "وأكثر من ٨٠ نموذج مختلف من المحتوى." },
 
     
   ];
   return (
-    <div
+    <>
+    {show===true?    <div
       className={`fixed inset-0 ${
         modalOpen === false ? "hidden" : "block"
       } box-bg bg-gray-500 bg-opacity-20 flex justify-center items-center`}
+      onClick={()=>setShow(!show)}
     >
-      <div className="bg-white box-modal md:w-[70%] overflow-y-auto md:h-[70%] w-[80%] md:min-h-[75%] min-h-[75%]   sm:min-h-[95%] p-0 rounded-xl shadow-lg relative">
+      <div className="bg-white box-modal md:w-[65%] overflow-y-auto md:h-[70%] w-[93%] md:min-h-[75%] min-h-[90%]   sm:min-h-[90%] p-0 rounded-xl shadow-lg relative">
         <div className="mb-4">
           <div className=" text-gray-600 hover:text-gray-800">
             <img src={firework} className="w-[100px]" alt="Firework" />
           </div>
           <div onClick={closeModal}>
             <div
-              className="  absolute left-[90%] text-[#DC1616] text-[28px] z-50 absolute md:left-[96%] top-[1%]   md:text-3xl"
+              className="  absolute cursor-pointe left-[90%] text-[#DC1616] text-[28px] z-50 absolute md:left-[96%] top-[1%]   md:text-3xl"
               onClick={closeModal}
             >
               {" "}
-              <IoIosCloseCircleOutline className=" w-full" />
+              <IoIosCloseCircleOutline className=" w-full cursor-pointer" />
             </div>
           </div>
         </div>
@@ -100,8 +103,8 @@ const Modal = ({ children }) => {
                     EGP   2400 
                     </span>
                  
-                    <h3 className=" p-2 py-3 text-white  text-[19px]  ">
-                      <span className=" font-sans text-[#FADF00] font-[600]">
+                    <h3 className=" p-2 py-3 text-white  text-[16px]  ">
+                      <span className=" font-sans text-[green] font-[600]">
                       EGP     799 
                       </span>{" "}
                       \ عدد كلمات غير محدود
@@ -109,20 +112,20 @@ const Modal = ({ children }) => {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-4 w-[95%] md:top-[90%]  absolute  ">
-                  <div className=" mt-5">
+                <div className="grid md:grid-cols-3  md:gap-4 md:w-[98%] w-full md:top-[90%] left-[0.1%]  p-0 flex justify-center  absolute  ">
+                  <div className=" mt-5 text-center     w-full   ">
       
-<div className=" bg-[#E60000B2] text-white  font-thin p-2 rounded-xl text-[.9rem]   "> عرض حصري ينتهي خلال</div>
+<div className=" bg-[#E60000B2] text-white md:w-[100%] md:px-0  px-6  font-thin p-2   rounded-xl text-[.9rem] text-center   "> عرض حصري ينتهي خلال</div>
                   </div>
-                  <div className=" p-4">
+                  <div className=" md:p-4  pr-5 py-4 ">
                   
-                  <div className="grid grid-cols-3 gap-2">
-                  <div ><h3 className=" inter-text  font-[700] flex justify-center text-[1.3rem] flex align-center">{formatTime(hours)} <span className=" mr-2 text-[1.3rem] p-0  flex ">:</span>  </h3>
+                  <div className="grid grid-cols-3 gap-2  flex justify-center  ms-1">
+                  <div ><h3 className=" inter-text  font-[700] flex justify-center text-[1.3rem] flex align-center">{formatTime(hours)} <span className=" md:mr-2 mr-5 text-[1.3rem] p-0  flex ">:</span>  </h3>
                   
                   <p className=" font-thin text-[12px]  ">ساعات</p>
                   </div>
                   <div className="">
-                  <h3  className=" inter-text font-[700] text-[1.3rem] justify-between flex">{formatTime(minutes)} <span className="text-[1.3rem] mr-2">:</span></h3>
+                  <h3  className=" inter-text font-[700] text-[1.3rem] justify-between flex">{formatTime(minutes)} <span className="text-[1.3rem] md:mr-2 mr-1 p-0">:</span></h3>
                   <p className=" font-thin text-[12px] ">دقائق</p>
                   </div>
                   <div className="">
@@ -136,9 +139,9 @@ const Modal = ({ children }) => {
                 
                   
                   </div>
-                  <div className="  px-3  mt-7">
+                  <div className="  md:px-3  md:block px-5    flex justify-center  mt-2 mb-5 md:mb-0   md:mt-7">
                   
-                  <Link className="p-2 px-7 text-center text-white rounded-md bg-[#7238F0] font-thin" to="https://auth.mutqinai.com/#/signup">اشترك الان</Link>
+                  <Link className="p-2 px-7 md:me-0   text-center md:w-full w-[80%] text-white rounded-md bg-[#7238F0] font-thin" to="https://auth.mutqinai.com/#/signup">اشترك الان</Link>
                   
                   </div>
                 </div>
@@ -153,10 +156,10 @@ const Modal = ({ children }) => {
           
           </header>
            <main className=" mt-5 px-3">
-           <div className="grid md:grid-cols-12 gap-4 flex align-center justify-center">
+           <div className="grid md:grid-cols-12 gap-4 flex align-center justify-center" dir='rtl'>
            {features.map((item, index) => (
             <React.Fragment key={index}>
-              <div className="col-span-1 flex align-center py-1">
+              <div className="col-span-1   flex align-center py-1">
                 <img src={righticon} className="w-[100%]" alt="icon" />
               </div>
               <div className="col-span-11 text-[1rem]">
@@ -173,7 +176,9 @@ const Modal = ({ children }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div>:""}
+
+    </>
   );
 };
 

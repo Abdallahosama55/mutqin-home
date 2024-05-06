@@ -11,7 +11,7 @@ import ma from "../assets/forgetSection/Frame 1171276676.png";
 // import ma from "../assets/material-symbols-light_photo-library-rounded.png";
 
 import chat from "../assets/forgetSection/chat0 (2).png";
-import content from "../assets/forgetSection/content.png";
+import content from "../assets/forgetSection/content0.png";
 import detector from "../assets/forgetSection/det.png";
 import article from "../assets/forgetSection/art.png";
 import secGirl from "../assets/girl chatting online.png";
@@ -90,7 +90,7 @@ const avatars = [
       "عملية إنشاء محتوى سريعة، فقط اختر القسم وأدخل التفاصيل.",
       "مكن للأداة توجيه المحتوى للجمهور المستهدف بشكل دقيق.",
       "تحسين أداء المواقع والسوشيال ميديا من خلال محتوى متميز.",
-      "حلاً سريعاً وفعالاً لإنشاء المحتوى. يمكنك من توفير الوقت والجهد.",
+      "حلاً سريعاً وفعالاً لإنشاء المحتوى. يمكنك من توفير الوقت والجهد.",
     ],
   },
 ];
@@ -124,7 +124,7 @@ const ForgtenSection = () => {
             <div className="flex-grow">
               <h3 className="text-start text-[20px] pb-5">{item.title}</h3>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end ">
               <img src={item.image} className="w-[75px] align-self-end" alt={item.title} />
             </div>
           </div>
@@ -138,7 +138,7 @@ const ForgtenSection = () => {
 
           {avatars.map((avatar) => (
             <div
-              className={`mb-6 bg-${avatar.id} py-12 xl:pe-0 lg:pe-0  md:pe-0 justify-content-center min-h-[520px]  border-[1px] rounded-[10px] p-5  border-secondary border-opacity-[10%] grid  mx-auto`}
+              className={`mb-6 bg-${avatar.id}   py-12 xl:pe-0 lg:pe-0  md:pe-0 justify-content-center min-h-[520px]  border-[1px] rounded-[10px] p-5  border-secondary border-opacity-[10%] grid  mx-auto`}
             >
               <ForgetComp
                 key={avatar.id}
