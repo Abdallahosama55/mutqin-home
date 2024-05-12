@@ -172,7 +172,8 @@ const Packages = () => {
                 <div className="text-[18px] font-light ">شهريًا </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 0" :"$ 0"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 0" :""}
+                {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 0" :""}
                   {currency.cur === "EGP"&& "EGP 0" }
                   {currency.cur === "USD" && "$ 0"}
                   {currency.cur === "AED" && "AED 0"}
@@ -277,7 +278,8 @@ const Packages = () => {
                 <div className="text-[18px] font-light ">شهريًا </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 299" :"$ 6.34"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 299" :""}
+                {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 6.34" :""}
                    {currency.cur === "EGP" &&  "EGP 299" }
                   {currency.cur === "USD" && "$ 6.34"}
                   {currency.cur === "AED" && "AED 23.29"}
@@ -383,7 +385,8 @@ const Packages = () => {
                 <div className="text-[18px] font-light ">شهريًا </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 499" :"$ 10.58"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 499" :""}
+                {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 10.58" :""}
                   {currency.cur === "EGP" && "EGP 499"}
                   {currency.cur === "USD" && "$ 10.58"}
                   {currency.cur === "AED" && "AED 38.88"}
@@ -491,7 +494,9 @@ const Packages = () => {
                 <div className="text-[18px] font-light font-[900] ">ثلاثة أشهر </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 799" :"$ 16.95"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 799" :""}
+                {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 16.95" :""}
+                
                 {currency.cur === "EGP" && "EGP 799"}
                 {currency.cur === "USD" && "$ 16.95"}
                 {currency.cur === "AED" && "AED 62.26"}
