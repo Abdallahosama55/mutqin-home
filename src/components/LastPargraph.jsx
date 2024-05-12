@@ -46,7 +46,7 @@ const LastPargraph = () => {
             مُتقِن لتحقيق أهدافهم وتجاوز توقعاتهم؟
           </h2>
           <Link
-            to="http://auth.mutqinai.com/#/signup"
+            to="https://auth.mutqinai.com/signup"
             className="inline-flex md:items-start  hover:border-secondary   hover:border-[1px] hover:bg-white hover:text-secondary    items-center justify-center px-10 py-3 text-base font-medium text-center  bg-secondary text-white border border-secondary rounded-[10px]   ">
             ابدأ الآن مَجاناً
           </Link>

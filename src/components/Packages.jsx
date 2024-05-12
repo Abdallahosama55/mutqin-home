@@ -5,6 +5,7 @@ import rocet from "../assets/package/rocket_11734989 1 (1).png";
 import star from "../assets/package/star 1.png";
 import badge from "../assets/package/badge.png";
 import tag from "../assets/package/Tag.png";
+import axios from 'axios';
 
 import { Link } from "react-router-dom";
 
@@ -65,11 +66,21 @@ const list = [
 ];
 
 const Packages = () => {
+  
   const [isPopped, setPopped] = useState(false);
-  const [currency, setCurrency] = useState({ cur: "EGP", arb: "جنية مصري " });
+  const [currency, setCurrency] = useState({ cur: "-", arb: " اختر العملة " });
   const [openList, setOpenList] = useState(false);
   const [currentPackage, setCurrentPackage] = useState("month");
-
+  const [currency_api, setCurrency_api] = useState()
+  const getData = async () => {
+    const res = await axios.get("https://ipapi.co/json/");
+    setCurrency_api(res.data.currency);
+  
+  };
+  useEffect(() => {
+    //passing getData method to the lifecycle method
+    getData();
+  }, []);
   const currencyList = [
     { cur: "EGP", arb: "جنية مصري " },
     { cur: "USD", arb: "الدولار الأمريكي" },
@@ -161,7 +172,8 @@ const Packages = () => {
                 <div className="text-[18px] font-light ">شهريًا </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                  {currency.cur === "EGP" && "EGP 0"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 0" :"$ 0"}
+                  {currency.cur === "EGP"&& "EGP 0" }
                   {currency.cur === "USD" && "$ 0"}
                   {currency.cur === "AED" && "AED 0"}
                   {currency.cur === "KWD" && "KWD 0"}
@@ -265,7 +277,8 @@ const Packages = () => {
                 <div className="text-[18px] font-light ">شهريًا </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                  {currency.cur === "EGP" && "EGP 299"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 299" :"$ 6.34"}
+                   {currency.cur === "EGP" &&  "EGP 299" }
                   {currency.cur === "USD" && "$ 6.34"}
                   {currency.cur === "AED" && "AED 23.29"}
                   {currency.cur === "KWD" && "KWD 1.95"}
@@ -283,7 +296,7 @@ const Packages = () => {
             </div>
 
             <Link
-              to="http://auth.mutqinai.com/#/signin"
+              to="https://auth.mutqinai.com/signup"
               className={`        hover:bg-[#ff9159] mb-4 mx-auto   mt-2  relative z-10  child-button   bg-[#FFA275]  text-white  border-[#FFA275] border-[1px]   focus:ring-4 focus:ring-[#FFA275] font-medium rounded-[12px]  w-[85%] text-sm px-10 py-2 text-center   `}>
               اشترك الان{" "}
             </Link>
@@ -370,6 +383,7 @@ const Packages = () => {
                 <div className="text-[18px] font-light ">شهريًا </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 499" :"$ 10.58"}
                   {currency.cur === "EGP" && "EGP 499"}
                   {currency.cur === "USD" && "$ 10.58"}
                   {currency.cur === "AED" && "AED 38.88"}
@@ -388,7 +402,7 @@ const Packages = () => {
             </div>
 
             <Link
-              to="http://auth.mutqinai.com/#/signin"
+              to="https://auth.mutqinai.com/signup"
               className={`        hover:bg-[#1FB5AC] mb-4 mx-auto   mt-2  relative z-10  child-button   bg-[#1FB5AC]  text-white  border-[#66B8E4] border-[1px]   focus:ring-4 focus:ring-[#1FB5AC] font-medium rounded-[12px]  w-[85%] text-sm px-10 py-2 text-center   `}>
               اشترك الان{" "}
             </Link>
@@ -477,7 +491,12 @@ const Packages = () => {
                 <div className="text-[18px] font-light font-[900] ">ثلاثة أشهر </div>
                 <div className="text-[25px] ">\</div>
                 <div className="font-sans text-[21px]">
-                  {currency.cur === "EGP" ? "EGP 799":"$ 16.95"}
+                {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 799" :"$ 16.95"}
+                {currency.cur === "EGP" && "EGP 799"}
+                {currency.cur === "USD" && "$ 16.95"}
+                {currency.cur === "AED" && "AED 62.26"}
+                {currency.cur === "KWD" && "KWD 5.21"}
+                {currency.cur === "SAR" && "SAR 63.58"}
                
                 </div>
               </span>
@@ -492,7 +511,7 @@ const Packages = () => {
             </div>
 
             <Link
-              to="http://auth.mutqinai.com/#/signin"
+              to="https://auth.mutqinai.com/signup"
               className={`        hover:bg-[#7238F0] mb-4 mx-auto   mt-2  relative z-10  child-button   bg-[#7238F0]  text-white  border-[#7238F0] border-[1px]   focus:ring-4 focus:ring-[#7238F0] font-medium rounded-[12px]  w-[85%] text-sm px-10 py-2 text-center   `}>
               اشترك الان{" "}
             </Link>

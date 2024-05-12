@@ -101,7 +101,7 @@ const Navbar = () => {
           </li>
           <li className=" hover:bg-white-100   py-2  text-center">
             <Link
-              to="http://auth.mutqinai.com/#/signin"
+              to="https://auth.mutqinai.com/signin"
               className=" lg:px-6 md:px-1.5 transition px-4  duration-300 ease-in  border-secondary border-[1px] text-white bg-secondary  hover:bg-white hover:text-secondary  rounded-[10px]  py-[10px]">
               تسجيل دخول
             </Link>
@@ -157,7 +157,7 @@ const Navbar = () => {
               تسجيل دخول
             </Link>
             <Link
-              to="http://auth.mutqinai.com/#/signup"
+              to="https://auth.mutqinai.com/signup"
               className=" lg:px-6  md:px-2 mx-2  px-2  hover:border-secondary border-[1px] border-transparent hover:border-[1px] transition duration-300 ease-in text-white hover:bg-white hover:text-secondary  bg-secondary rounded-[10px]  py-[10px]">
               ابدأ الآن مَجاناً
             </Link>

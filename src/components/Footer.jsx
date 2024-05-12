@@ -69,7 +69,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col  gap-3 justify-center sm:justify-start">
               <Link
-                to="http://auth.mutqinai.com/#/signup"
+                to="https://auth.mutqinai.com/signup"
                 className="inline-flex max-w-[170px]  md:items-start text-[14px]  items-center justify-center px-8 py-3 text-base font-medium text-center hover:border-tertiary text-white border-[1px] hover:border-[1px] hover:bg-white hover:text-tertiary  bg-secondary rounded-[10px]   ">
                 ابدأ الآن مَجاناً
               </Link>

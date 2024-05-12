@@ -141,7 +141,7 @@ const Modal = ({ children }) => {
                   </div>
                   <div className="  md:px-3  md:block px-5    flex justify-center  mt-2 mb-5 md:mb-0   md:mt-7">
                   
-                  <Link className="p-2 px-7 md:me-0   text-center md:w-full w-[80%] text-white rounded-md bg-[#7238F0] font-thin" to="https://auth.mutqinai.com/#/signup">اشترك الان</Link>
+                  <Link className="p-2 px-7 md:me-0   text-center md:w-full w-[80%] text-white rounded-md bg-[#7238F0] font-thin" to="https://auth.mutqinai.com/signup">اشترك الان</Link>
                   
                   </div>
                 </div>

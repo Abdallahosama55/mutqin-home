@@ -55,7 +55,7 @@ const HomeTextSection = () => {
         <Form>
           <div className="gap-3  text-center  border-[1px] border-[#692BEF33] relative z-19 justify-between      py-1 sm:gap-4 px-4 items-center  sm:justify-between sm:px-4 flex   rounded-[10px]">
             <Link
-              to="http://auth.mutqinai.com/#/signup"
+              to="https://auth.mutqinai.com/signup"
               // type="submit"
               className="relative   hover:bg-[#5225cedb]    px-10   py-1  sm:py-2 sm:px-[55px] text-white bg-[#5225CE] rounded-[10px] ">
               <img
