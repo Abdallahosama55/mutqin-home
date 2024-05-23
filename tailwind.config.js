@@ -16,6 +16,9 @@ export default {
         bggreenoptic: "rgba(12, 133, 17, 0.5)",
         frame9: "rgba(246, 44, 71, 0.78)",
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90deg, rgba(105, 43, 239, 0.2) 7.42%, rgba(247, 247, 250, 0) 210.61%)',
+      },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },

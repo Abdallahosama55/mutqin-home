@@ -35,7 +35,7 @@ const Navbar = () => {
       id="nav"
       dir="rtl"
       className="  flex justify-center   pt-0 top-[-5px]     w-full            z-19    mx-auto  ">
-      <div className="lg:w-[82%] xl:w-[82%] w-[100%]      mx-auto   z-19 border-[#5225CE33] sm:border-[1px]   bg-transparent        relative     md:rounded-[10px] flex  items-center justify-between p-4">
+      <div className="lg:w-[82%] xl:w-[82%] w-[100%]      mx-auto   z-19    bg-transparent        relative     flex  items-center justify-between p-4">
         {/* <div className=" max-w-screen-xl   md:mx-2  z-50 nav-shadow   bg-transparent        relative     md:rounded-[10px] flex  items-center justify-between xl:mx-auto p-4"> */}
         <Link
           to="#"
@@ -111,11 +111,11 @@ const Navbar = () => {
         <div
           className="hidden w-full lg:block md:w-auto"
           id="navbar-default">
-          <ul className=" text-primary  font-[300] flex text-[16px]  lg:gap-16 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
+          <ul className=" text-primary   font-[300] flex text-[16px]  lg:gap-8 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0  ">
             <li className="transition duration-300 ease-in  hover:scale-[1.1]">
               <a
                 href="#home"
-                className=" transition font-[300]   ease-in hover:text-secondary w-full">
+                className=" transition font-[300]    ease-in hover:text-secondary w-full">
                 الرئيسية
               </a>
             </li>

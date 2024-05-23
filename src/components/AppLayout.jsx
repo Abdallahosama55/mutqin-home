@@ -8,7 +8,7 @@ function AppLayout() {
     <div className="grid h-screen grid-rows-[auto_1fr] ">
       <div className="   overflow-y-scroll      overflow-x-hidden   ">
  
-   
+   <Navbar/>
 
   
         <main className="">

@@ -9,6 +9,7 @@ import twitter from "../assets/Footer/x.png";
 import linkedin from "../assets/Footer/linkedin logo.png";
 import tec from "../assets/Footer/tec.png";
 import youtube from "../assets/Footer/youtube.png";
+import mutqin from '../assets/mutqin-removebg-preview 1 (2).png'
 const customlist = [
   {
     title: "الحلول:",
@@ -47,7 +48,7 @@ const Footer = () => {
       <div
         dir="rtl"
         className="  text-primary   ">
-        <div className="space-y-8 md:grid md:grid-cols-2 pb-20  pt-10 sm:px-0 px-8  justify-items-center   max-w-[1400px]   mx-auto  lg:grid-cols-4 sm:gap-6 xl:gap-10 lg:space-y-0">
+        <div className="space-y-8 md:grid md:grid-cols-2 pb-20  pt-10 sm:px-0 px-8  justify-items-center   max-w-[1400px]   mx-auto  lg:grid-cols-5 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div className=" md:pr-20 lg:pr-0 text-[#5225CE] space-y-8">
             <div className=" flex  h-[34px] gap-3 sm:justify-start justify-center items-center">
               <img
@@ -85,57 +86,7 @@ const Footer = () => {
                     />
                   </Link>
                 ))}
-                {/* <Link
-                  className="  h-8  w-8  transition hover:scale-[1.1]  ease-in   flex justify-center items-center rounded-full "
-                  to="#">
-                  <img
-                    className="       border-white   w-7 h-7"
-                    src={facebook}
-                  />
-                </Link>
-
-                <Link
-                  className="  h-8  w-8 transition hover:scale-[1.1]  ease-in   flex justify-center items-center rounded-full "
-                  to="#">
-                  <img
-                    className="      border-white   w-7 h-7"
-                    src={instagram}
-                  />
-                </Link>
-
-                <Link
-                  className="  h-8  w-8  transition hover:scale-[1.1]  ease-in   flex justify-center items-center rounded-full "
-                  to="#">
-                  <img
-                    className="      border-white   w-7 h-7"
-                    src={linkedin}
-                  />
-                </Link>
-                <Link
-                  className="  h-8  w-8  transition hover:scale-[1.1]  ease-in   flex justify-center items-center rounded-full "
-                  to="#">
-                  <img
-                    className="      border-white   w-7 h-7"
-                    src={tec}
-                  />
-                </Link>
-                <Link
-                  className="  h-8  w-8  transition hover:scale-[1.1]  ease-in  flex justify-center items-center rounded-full "
-                  to="#">
-                  <img
-                    className="      border-white   w-7 h-7"
-                    src={youtube}
-                  />
-                </Link>
-
-                <Link
-                  className=" transition hover:scale-[1.1]  ease-in    h-8  w-8   flex justify-center items-center rounded-full "
-                  to="#">
-                  <img
-                    className="      border-white   w-7 h-7"
-                    src={twitter}
-                  />
-                </Link> */}
+                
               </div>
             </div>
           </div>
@@ -239,6 +190,9 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+          <div className=" w-full b">
+          <img src={mutqin} className=" w-full"/>
+          </div>
         </div>
       </div>
       <div className="  text-[12px] text-primary justify-center items-center flex  flex-wrap gap-16  text-center  py-5">

@@ -17,7 +17,9 @@ import ThirdStep from "../../components/ThirdStep";
 import MobileSection from "../../components/MobileSection";
 import Navbar from "../../components/Navbar";
 import Modal from "../../components/common/Modal";
-
+import bgsection3 from '../../assets/elements (1).png';
+import centerlines from '../../assets/center_lines.png'
+import ContentSectioncomp from "../../components/contentSectioncomp";
 export const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,19 +33,41 @@ export const Home = () => {
 
   </div>
  
-    <div className="  home-section1 w-[100] home ">
-    <div className=" md:py-4"><Navbar/></div>
+    <div className=" relative  home-section1 w-[100]  ">
   
     <HomeTextSection />
-   
-    </div>
-      <BoxSection />
-      <PoweredSection />
-      <BlocksSection />
-      <ForgtenSection />
 
-  
-      <MobileSection />
+    </div>
+       <BoxSection />
+<div className=" relative  ">
+<img src={bgsection3} className="absolute z-0 top-[90%] w-full  "/>
+<div className=" px-56">
+
+<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+</div>
+<BlocksSection />
+<div className=" flex justify-center">
+<img src={centerlines} className="  "/>
+
+</div>
+<div className=" px-56">
+
+<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+</div>
+
+</div>
+<ForgtenSection />
+
+<ContentSectioncomp/>
+<div className=" flex justify-center">
+<img src={centerlines} className="  "/>
+
+</div>
+<div className=" px-56">
+
+<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+</div>
+      
 
       <Packages />
 

@@ -19,6 +19,7 @@ import womanAndMan from "../assets/woman and man working together.png";
 import guyWithbag from "../assets/guy with backpack and laptop.png";
 import youngWoman from "../assets/young woman in hijab stands with a phone in her hand.png";
 import ForgetComp from "./ForgetComp";
+import centerlines from '../assets/center_lines.png'
 import { Link } from "react-router-dom";
 const items = [
   {
@@ -33,10 +34,7 @@ const items = [
     title: "حلول التدقيق اللغوي",
     image: fa,
   },
-  {
-    title: "  اقسام محتوي متنوعة",
-    image: ma,
-  },
+
  
   // Add more items as needed
 ];
@@ -97,10 +95,10 @@ const avatars = [
 
 const ForgtenSection = () => {
   return (
-    <section id="used" className="  mb-10  relative ">
+    <section id="used" className="    relative ">
       <div
         dir="rtl"
-        className="   py-4 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6"
+        className="   pt-4 pb-0 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6"
       >
         <div className="  text-black max-w-[1100px] mx-auto text-center ">
           <div>
@@ -118,7 +116,7 @@ const ForgtenSection = () => {
             </p>
           </div>
 
-          <div className="grid mb-6 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+          <div className="grid mb-6 xl:grid-cols-3 xl:px-24 lg:px-24 md-px-24 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           {items.map((item, index) => (
             <div key={index} className="bg-[#FFF7CC] text-[#5225CE] p-4 rounded-[12px] flex flex-col">
             <div className="flex-grow">
@@ -138,7 +136,7 @@ const ForgtenSection = () => {
 
           {avatars.map((avatar) => (
             <div
-              className={`mb-6 bg-${avatar.id}   py-12 xl:pe-0 lg:pe-0  md:pe-0 justify-content-center min-h-[520px]  border-[1px] rounded-[10px] p-5  border-secondary border-opacity-[10%] grid  mx-auto`}
+              className={`mt-6 bg-${avatar.id}   py-12 xl:pe-0 lg:pe-0  md:pe-0 justify-content-center min-h-[520px]  border-[1px] rounded-[10px] p-5  border-secondary border-opacity-[10%] grid  mx-auto`}
             >
               <ForgetComp
                 key={avatar.id}
@@ -150,8 +148,19 @@ const ForgtenSection = () => {
               />
             </div>
           ))}
+
+          <div className="    flex justify-center">
+          <img src={centerlines} className="  "/>
+          
+          </div>
+          <div className=" px-56">
+
+<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+</div>
         </div>
+    
       </div>
+ 
     </section>
   );
 };

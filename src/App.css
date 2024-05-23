@@ -2,11 +2,19 @@
 body {
   padding: 0px !important;
   margin: 0px !important;
+  background-color: #F8F9FA;
 
 
 }
 .home-section1{
-  background: linear-gradient(180deg, rgba(82, 37, 206, 0.2) 40.97%, rgba(247, 247, 250, 0) 100%);
+ background: linear-gradient(180deg, rgba(105, 43, 239, 0.2) 40.97%, rgba(247, 247, 250, 0) 100%);
+
+
+}
+.home-section2{
+  background: linear-gradient(90deg, rgba(105, 43, 239, 0.2) 7.42%, rgba(247, 247, 250, 0) 210.61%);
+  ;
+  box-shadow: 6px 6px 54px 0px #0000001A;
 
 }
 
@@ -42,4 +50,30 @@ body {
 }
 .withpadding {
   padding: 0 0.15em;
+}
+.transition-text {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+
+.bg-section-box{
+  background-image: url('./assets/starsgroup.png');
+  background-size: cover;
+}
+.package_bg{
+  background-image: url('./assets/package/Ellipse\ 11.png') !important;
+
+  background-size:cover ;
+
+  background-repeat: repeat;
 }

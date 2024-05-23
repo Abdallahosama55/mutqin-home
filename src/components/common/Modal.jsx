@@ -5,6 +5,7 @@ import queen from "../../assets/modal/queen.png";
 
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Modal = ({ children }) => {
   const [modalOpen, setModalOpen] = useState(true);
@@ -12,7 +13,17 @@ const Modal = ({ children }) => {
   const [minutes, setMinutes] = useState(18);
   const [seconds, setSeconds] = useState(40);
   const [show, setShow] = useState(true);
+  const [currency, setCurrency] = useState()
+  const getData = async () => {
+    const res = await axios.get("https://ipapi.co/json/");
+    setCurrency(res.data.currency);
 
+  };
+  useEffect(() => {
+    getData()
+    console.log(getData())
+  }, [])
+  
   useEffect(() => {
     const interval = setInterval(() => {
       if (seconds === 0) {
@@ -100,12 +111,15 @@ const Modal = ({ children }) => {
                   <div className="block px-3  mb-5">
                     <h3 className=" p-2  py-5 text-white ">ثلاثة أشهر </h3>
                     <span className="strikediag  m-2 p-0 text-[#E60000] font-sans">
-                    EGP   2400 
+              
+                    {currency==="EGP"? "2400 EGP" :" $50.97  "}   
+                    
                     </span>
                  
                     <h3 className=" p-2 py-3 text-white  text-[16px]  ">
                       <span className=" font-sans text-[green] font-[600]">
-                      EGP     799 
+                         {currency==="EGP"? "799 EGP" :" $16.59  "}   
+
                       </span>{" "}
                       \ عدد كلمات غير محدود
                     </h3>

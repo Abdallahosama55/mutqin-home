@@ -19,9 +19,13 @@ function App() {
             element={<Navigate to="/home" />}
           />
           <Route
-            path="/home"
+            path="/"
             element={<Home />}
           />
+          <Route
+          path="/home"
+          element={<Home />}
+        />
           <Route
             path="*"
             element={<Home />}
