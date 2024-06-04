@@ -1,8 +1,8 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
-import illustation from "../assets/git_home.gif";
+import illustation from "../assets/illustrationhigh.png";
 import line from "../assets/line.png";
-
+import isrocket from "../assets/vectorroceket.png";
 import rocket from "../assets/fluent_rocket-24-filled.png";
 import TextError from "./TextError";
 import { useState ,useEffect } from "react";
@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 import threelines from '../assets/three_lines.png';
 import search from '../assets/mingcute_search-line.png'
 import lines from '../assets/hero-7-top-line.png.png'
-
+import videoSource from "../assets/main.mov"
 const HomeTextSection = () => {
-
+  const [hovered, setHovered] = useState(false);
   const texts = [
     "وصف منتجات",
     " المقالات والمدونات",
@@ -52,22 +52,21 @@ const HomeTextSection = () => {
   };
   return (
     <section
-      id="home"
+      id="banner"
       className="  relative  w-[100%]     mx-auto  ">
-      <div className="w-[100%] flex justify-center">
-      <img src={lines} className=" absolute   w-[80%] top-[0%] z-0   "/>
-      
+      <div className="flex justify-center">
+  
       </div>
     
       <img src={threelines} className=" absolute   top-[60%] left-[45%] z-0 w-[60%]  h-[40vh] "/>
-      <div className="grid grid-cols-1   justify-center  mx-[5%]  lg:mx-[31%] md:mx-[31%] xl:mx-[31%] m-0">
+      <div className="grid grid-cols-1   justify-center  mx-[5%]  lg:mx-[30%] md:mx-[30%] xl:mx-[30%] m-0">
    
       <div className="  text-dev  ">
-      <div className="   py-6 pt-12 mt-2   relative flex flex-col  justify-center items-center   gap-3   ">
+      <div className="    pb-6   relative flex flex-col  justify-center items-center   gap-3   ">
 
       <h2
       dir="rtl"
-      className="   flex text-[32px]  md:text-[40px]  font-[600]  items-center  justify-center   text-[#1F2A37]  ">
+      className="   flex text-[30px] mt-3  md:text-[45px]  font-[600]  items-center  justify-center   text-[#1F2A37]  ">
       إنشاء عدد غير محدود من
     </h2>
     <h3
@@ -80,23 +79,33 @@ const HomeTextSection = () => {
      
       
       </div>
+      <div className="  ">
+      
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={onSubmit}>
         <Form>
-          <div className=" text-center  border-[1px] border-[#001A78] relative z-19      py-2 sm:gap-4 px-3 items-center  sm:justify-between sm:px-3 flex   rounded-[8px]">
-          <div className=" bg-white  gap-3  text-center  relative z-19   w-full      sm:gap-4 px-4 items-center  sm:justify-between sm:px-4 flex   rounded-[8px]">
+          <div className=" ">
+          <div className=" bg-white py-2   mx-4 md:mx-12  gap-3  text-center  relative z-19        sm:gap-4 px-4 items-center  sm:justify-between sm:px-4 flex   rounded-[8px]">
       
           <Link
           to="https://auth.mutqinai.com/signup"
           // type="submit"
-          className="relative   hover:bg-[#5225cedb]    px-10    sm:py-1  text-white bg-[#5225CE] rounded-[10px] ">
+          className="relative text-[8px] md:text-[10px] xl:text-[12px] lg:text-[13px] flex items-center hover:bg-[#5225cedb] text-start ps-5 w-[160px] sm:py-1 text-white bg-[#5225CE] rounded-[6px] "
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          style={{ transition: 'opacity 0.3s, transform 0.3s' }}
+        >
+          <span style={{ opacity: hovered ? 0 : 1, transition: 'opacity 0.3s' }}>ابدأ مجانا</span>
           <img
-            src={rocket}
-            className=" sm:block     w-5 h-4 sm:h-[24px] md:w-[24px] sm:w-[24px] sm:h-[24px] absolute top-[5px] left-[70px] sm:top-[4px] sm:left-[70px]"
+            src={hovered ? isrocket:rocket}
+            className={`sm:block w-8 h-8  transform ${
+              hovered ? 'md:-translate-x-[100%] -translate-x-[75%] translate-y-1/8 w-5 h-[23px]  my-1  ' : 'translate-x-0 translate-y-0'
+            }`}
+            style={{ transition: 'transform 0.3s' }}
+            alt="Rocket"
           />
-          بدء
         </Link>
         <div dir="rtl" className="  ps-1 w-[100%] ">
       
@@ -120,15 +129,13 @@ const HomeTextSection = () => {
         </Form>
       </Formik>
 
-      <div className="absolute z-5   flex border-[10px] mt-6 border-[#692BEF] rounded-[12px]   img-dev align-center relative  ">
-      
-      
-      
-    
-      <img src={illustation}   className="w-full h-[320px]"/>
-      
+      <div className="relative z-5 p-0 h-100 flex border-[10px] mt-6 border-[#692BEF] rounded-[12px] align-center relative">
+  <video src={videoSource} autoPlay loop className="w-full md:h-[100]" />
+</div>
+
       
       </div>
+
       </div>
 
     </div>

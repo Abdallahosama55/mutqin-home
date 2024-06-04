@@ -8,7 +8,7 @@ function ContentSectioncomp() {
   return (
     <div>
     
-    <div className=' grid grid-cols-1 md:grid-cols-2   pt-4 pb-0 px-4  md:mx-[10%] max-w-screen-xl sm:py-8 lg:px-6 justify-center  gap-4' dir="rtl">
+    <div className=' grid grid-cols-1 md:grid-cols-2  pb-0   md:pt-0   pt-4 pb-0 px-4  pt-4 pb-0 px-4 mx-auto max-w-screen-xl lg:px-24 max-w-[1100px]  justify-center  gap-4' dir="rtl">
     
     <div className=' text-[#1B223C]    '>
     <div  className=' border-[1px] border-[#1B223C]  rounded-[16px]'>
@@ -43,7 +43,7 @@ function ContentSectioncomp() {
  
  </div>
 
- <div className='ps-3 mt-6  md:mt-10 py-0'>
+ <div className='ps-3 mt-3  md:mt-10 py-0'>
  
  <h3 className=' font-[300] pb-2  '> الخطوة الثانية</h3>
  <p>أدخل التفاصيل وشاهد سحر متقن!.</p>
@@ -51,7 +51,7 @@ function ContentSectioncomp() {
  
  </div>
 
- <div className='ps-3 mt-5 md:mt-7 py-0'>
+ <div className='ps-3 mt-2 md:mt-7 py-0'>
  
  <h3 className=' font-[300] pb-2  '>  الخطوة الثالثة</h3>
  <p>المحتوى جاهز! يمكنك تعديله أو تحديثه قبل الاستخدام.</p>
@@ -75,7 +75,7 @@ function ContentSectioncomp() {
     
     <h3 className='text-[1.4rem] py-5'>أكثر من <span className="text-[#692BEF] inter-text font-[600] ">80</span> نموذج محتوي جاهز للاستخدام.</h3>
 
-    <p className=' text-[#1B223C] text-[13px]'>
+    <p className=' text-[#1B223C] text-[15px]'>
     تساعدك نماذج المحتوي الخاصة بنا على إنشاء محتوى عالي الكفاءة بسرعة وسهولة للمدونات ووسائل التواصل الاجتماعي، ومقاطع الفيديو، وتعزيز تحسين محركات البحث، وإنشاء محتوي لمختلف الأنشطة الإعلانية - كل ذلك في مكان واحد!
     
     
@@ -86,19 +86,19 @@ function ContentSectioncomp() {
 
     <div className=' py-5 pb-0'>
     <div>
-    <SliderSection/>
+    <SliderSection speed={1000} />
     
     </div>
     <div>
-    <SliderSection/>
+    <SliderSection speed={2000} />
     
     </div>
     <div>
-    <SliderSection/>
+    <SliderSection speed={1500}/>
     
     </div>
     <div>
-    <SliderSection/>
+    <SliderSection speed={1000} />
     
     </div>
     

@@ -58,9 +58,9 @@ const Information = () => {
   };
   return (
     <div
-      className=" relative py-5"
+      className=" relative py-5  "
       id="footer">
-      <section className="px-4 py-2 relative z-20 mt-2 sm:grid sm:grid-cols-2 gap-2 max-w-[1200px] mx-auto  ">
+      <section className="md:px-24 md:ps-12 px-5 py-2 relative z-20 mt-2 sm:grid sm:grid-cols-2 gap-8   max-w-[1200px] mx-auto  ">
         <div
           dir="rtl"
           className=" col-span-1  font-[600]   max-h-[650px] overflow-y-auto scroll-information  bg-white rounded-[10px] custom-SHadow text-primary px-10 py-8 mx-auto divide-y-[1px]">

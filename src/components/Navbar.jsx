@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/Nav/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { PiListFill } from "react-icons/pi";
-
+import arrowIcon from "../assets/Nav/uil_arrow-up.png"
+import { FaArrowRight } from "react-icons/fa"
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
@@ -34,18 +35,18 @@ const Navbar = () => {
     <nav
       id="nav"
       dir="rtl"
-      className="  flex justify-center   pt-0 top-[-5px]     w-full            z-19    mx-auto  ">
-      <div className="lg:w-[82%] xl:w-[82%] w-[100%]      mx-auto   z-19    bg-transparent        relative     flex  items-center justify-between p-4">
+      className="  flex justify-center rounded-2xl  shadow-lg bg-white  pt-0 top-[-5px]     w-full            z-19    mx-auto  ">
+      <div className="lg:w-[98%] xl:w-[98%] w-[100%]      mx-auto   z-19    bg-transparent        relative     flex  items-center justify-between p-4">
         {/* <div className=" max-w-screen-xl   md:mx-2  z-50 nav-shadow   bg-transparent        relative     md:rounded-[10px] flex  items-center justify-between xl:mx-auto p-4"> */}
-        <Link
-          to="#"
+        <a
+          href="#banner"
           className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src={logo}
             className="h-10  "
             alt="Flowbite Logo"
           />
-        </Link>
+        </a>
 
         <ul
           className={`${
@@ -58,14 +59,7 @@ const Navbar = () => {
               ابدأ الآن مَجاناً{" "}
             </Link>
           </li> */}
-          <li className=" hover:bg-white-100 w-full py-2  text-center">
-            <a
-              href="#home"
-              onClick={handleLinkClick}
-              className=" w-full ">
-              الرئيسية
-            </a>
-          </li>
+      
 
           <li className=" hover:bg-white-100 w-full py-2  text-center">
             <a
@@ -109,58 +103,54 @@ const Navbar = () => {
         </ul>
         {/* lg device */}
         <div
-          className="hidden w-full lg:block md:w-auto"
+          className="hidden  ms-32 ps-5  w-full lg:block md:w-auto"
           id="navbar-default">
-          <ul className=" text-primary   font-[300] flex text-[16px]  lg:gap-8 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0  ">
-            <li className="transition duration-300 ease-in  hover:scale-[1.1]">
-              <a
-                href="#home"
-                className=" transition font-[300]    ease-in hover:text-secondary w-full">
-                الرئيسية
-              </a>
-            </li>
+          <ul className=" text-primary    font-[500] text-[#1B223C] flex text-[16px]  lg:gap-8  position-fixed flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0  ">
+    
             <li className="transition duration-300 ease-in  hover:scale-[1.1]">
               <a
                 href="#features"
-                className=" transition font-[300]   ease-in hover:text-secondary w-full">
+                className=" transition font-[500] text-[#1B223C]  ease-in hover:text-secondary w-full">
                 مميزاتنا
               </a>
             </li>
             <li className="transition duration-300 ease-in  hover:scale-[1.1]">
               <a
                 href="#used"
-                className=" transition  font-[300]  ease-in hover:text-secondary w-full">
+                className=" transition  font-[500] text-[#1B223C] ease-in hover:text-secondary w-full">
                 الاستخدامات
               </a>
             </li>
             <li className="transition duration-300  ease-in  hover:scale-[1.1]">
               <a
                 href="#packages"
-                className=" transition  font-[300]  ease-in hover:text-secondary w-full">
+                className=" transition  font-[500] text-[#1B223C] ease-in hover:text-secondary w-full">
                 الباقات
               </a>
             </li>
             <li className="transition duration-300  ease-in   hover:scale-[1.1]">
               <a
                 href="#footer"
-                className=" transition  font-[300]  ease-in hover:text-secondary w-full">
+                className=" transition  font-[500] text-[#1B223C]  ease-in hover:text-secondary w-full">
                 تواصل معنا
               </a>
             </li>
           </ul>
         </div>
-        <div className=" items-center flex gap-2">
+        <div className=" items-center flex gap-2  ">
           <div className="   w-full lg:flex text-xs  md:justify-between items-center md:w-auto">
             <Link
               to="http://auth.mutqinai.com/#/signin"
-              className=" hidden lg:block lg:px-6 md:px-1.5 transition duration-300 ease-in  border-secondary border-[1px] text-secondary  hover:bg-secondary hover:text-white  rounded-[10px]  py-[10px]">
+              className=" hidden lg:block lg:px-6 md:px-1.5 transition duration-300 ease-in  border-secondary border-[0px] text-secondary  rounded-[12px]  py-[8px]">
               تسجيل دخول
             </Link>
             <Link
               to="https://auth.mutqinai.com/signup"
-              className=" lg:px-6  md:px-2 mx-2  px-2  hover:border-secondary border-[1px] border-transparent hover:border-[1px] transition duration-300 ease-in text-white hover:bg-white hover:text-secondary  bg-secondary rounded-[10px]  py-[10px]">
-              ابدأ الآن مَجاناً
-            </Link>
+              className=" flex items-center lg:px-2  md:px-2 mx-2  px-2   border-[1px] border-transparent  transition duration-300 ease-in text-white    bg-secondary rounded-[12px]  " dir="rtl">
+           <img src={arrowIcon} className=" h-[25px] w-[25px] bg-white p-1 rounded-[50%]"/>
+           <span className=" px-2 py-[8px]">   ابدأ الآن مَجاناً</span>
+              
+              </Link>
           </div>
           <button
             onClick={() => setToggle(!toggle)}

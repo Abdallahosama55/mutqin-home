@@ -56,13 +56,13 @@ const Packages = () => {
     <section id="packages" >
       <div
         dir="rtl"
-        className={`py-[0px] px-5  z-20  relative mx-auto  lg:py-[40px] lg:px-6`}
+        className={`py-[0px] px-0  z-20  relative mx-auto  pt-4 pb-0  pt-4  mx-auto max-w-screen-xl  max-w-[1100px]   lg:py-[40px] `}
       >
         <div className="mx-auto max-w-4xl  text-secondary text-center mb-3 ">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold   ">
             الباقات
           </h2>
-          <div className=" py-4 px-4 items-center border-[1px] border-[#5225CE33]  border-opacity-[40%] rounded-[12px]   sm:flex  sm:justify-between">
+          <div className=" py-4 px-4 mx-6 md:mx-auto items-center border-[1px] border-[#5225CE33]  border-opacity-[40%] rounded-[12px]   sm:flex  sm:justify-between">
             <p className="  pb-2 sm:pb-0 text-primary font-medium  sm:text-[16px] ">
               خطط مصممة خصيصًا لتناسب جميع الأعمال الشخصية والتجارية
             </p>
@@ -108,7 +108,7 @@ const Packages = () => {
 
         <div
           style={{ transitionDuration: "1000ms", transitionDelay: "500ms" }}
-          className=" mt-10   xl:px-32 lg:px-32 px-6   grid lg:grid-cols-4  md:grid-cols-2   md:justify-between gap-5 "
+          className=" mt-10   xl:px-24 lg:px-24 px-6   grid lg:grid-cols-4  md:grid-cols-2   md:justify-between gap-5 "
         >
           <div
             className={`flex relative     bg-transparent  mb-4 lg:mb-0      h-full    flex-col    text-start    rounded-[18px] border-[1.8px]  border-opacity-[20%]  border-[#E7EBFF]  shadow-md  bg-white      text-primary   `}
@@ -123,11 +123,10 @@ const Packages = () => {
               />
               <header>اشتراك مجاني </header>
               <div className=" font-light text-[13px]    text-[#797878]">
-                وصول إلى محتوى متنوع وجودة عالية في كافة الأقسام دون دفع أي رسوم
-                .
+              وصول إلى محتوى متنوع مجاناً.
               </div>
               <div className="  flex  text-[#692BEF]  py-1 font-bold items-baseline gap-1">
-                <div className=" text-center font-sans font-bold  ">5000</div>
+                <div className=" text-center font-sans font-bold  ">2000</div>
                 كلمة
               </div>
 
@@ -140,16 +139,16 @@ const Packages = () => {
           
                   <div className="font-sans text-[21px]">
                     {currency.cur === "-" && currency_api === "EGP"
-                      ? "EGP 0"
+                      ? " 0 EGP"
                       : ""}
                     {currency.cur === "-" && currency_api !== "EGP"
                       ? "$ 0"
                       : ""}
-                    {currency.cur === "EGP" && "EGP 0"}
-                    {currency.cur === "USD" && "$ 0"}
-                    {currency.cur === "AED" && "AED 0"}
-                    {currency.cur === "KWD" && "KWD 0"}
-                    {currency.cur === "SAR" && "SAR 0"}
+                    {currency.cur === "EGP" && " 0 EGP"}
+                    {currency.cur === "USD" && " 0 $"}
+                    {currency.cur === "AED" && " 0 AED"}
+                    {currency.cur === "KWD" && " 0 KWD"}
+                    {currency.cur === "SAR" && " 0 SAR"}
                   </div>
                 </span>
               </div>
@@ -160,7 +159,7 @@ const Packages = () => {
               e.stopPropagation();
               handleClickCoupon('button1', false);
             }}
-              className={`    flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]   bg-[#ffff]    border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
+              className={`  hidden  flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]   bg-[#ffff]    border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
             >
               <div className=" w-full" dir="ltr">
                 {buttonStates['button1'] ? (
@@ -282,7 +281,7 @@ const Packages = () => {
           />
           <header> باقة البداية </header>
           <div className=" font-light text-[13px]    text-[#797878]">
-          استمتع بمزايا مُتقِن بشكل متقدم، للوصول لخيارات مخصصة لمختلف التخصصات . 
+          استمتع بمزايا مُتقِن بشكل متقدم.
           </div>
           <div className="  flex  text-[#692BEF]  py-1 font-bold items-baseline gap-1">
             <div className=" text-center font-sans font-bold  ">50</div>
@@ -297,13 +296,13 @@ const Packages = () => {
             <div className="text-[18px] text-[#797878]  font-light">شهريًا </div>
              
               <div className="font-sans text-[21px]">
-              {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 299" :""}
-              {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 6.34" :""}
-                 {currency.cur === "EGP" &&  "EGP 299" }
-                {currency.cur === "USD" && "$ 6.34"}
-                {currency.cur === "AED" && "AED 23.29"}
-                {currency.cur === "KWD" && "KWD 1.95"}
-                {currency.cur === "SAR" && "SAR 23.79"}
+              {currency.cur === "-" && currency_api ==="EGP"  ?  " 299 EGP" :""}
+              {currency.cur === "-" && currency_api !=="EGP"  ?  " 6.34 $" :""}
+                 {currency.cur === "EGP" &&  " 299 EGP" }
+                {currency.cur === "USD" && " 6.34 $"}
+                {currency.cur === "AED" && " 23.29 AED"}
+                {currency.cur === "KWD" && " 1.95 KWD"}
+                {currency.cur === "SAR" && " 23.79 SAR"}
               </div>
             </span>
           </div>
@@ -314,7 +313,7 @@ const Packages = () => {
 
             <button
               onClick={() =>  handleClickCoupon('button2', false)}
-              className={`    flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]   bg-[#ffff]    border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
+              className={`  hidden  flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]   bg-[#ffff]    border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
             >
               <div className=" w-full" dir="ltr">
                 {buttonStates['button2'] ? (
@@ -434,7 +433,7 @@ const Packages = () => {
               />
               <header> الباقة الاساسية  </header>
               <div className=" font-light text-[13px]    text-[#797878]">
-            تجربة متكاملة ومتقدمة بشكل أكبر ومثالية للمبدعين والشركات الناشئة . 
+              تجربة متكاملة ومتقدمة بشكل أكبر.
               </div>
               <div className="  flex  text-[#692BEF]  py-1 font-bold items-baseline gap-1">
                 <div className=" text-center font-sans font-bold  ">200</div>
@@ -449,13 +448,13 @@ const Packages = () => {
                 <div className="text-[18px] text-[#797878]  font-light">شهريًا </div>
   
                   <div className="font-sans text-[21px]">
-                 {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 499" :""}
-                {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 10.58" :""}
-                  {currency.cur === "EGP" && "EGP 499"}
-                  {currency.cur === "USD" && "$ 10.58"}
-                  {currency.cur === "AED" && "AED 38.88"}
-                  {currency.cur === "KWD" && "KWD 3.25"}
-                  {currency.cur === "SAR" && "SAR 39.71"}
+                 {currency.cur === "-" && currency_api ==="EGP"  ?  " 499 EGP" :""}
+                {currency.cur === "-" && currency_api !=="EGP"  ?  " 10.58 $" :""}
+                  {currency.cur === "EGP" && " 499 EGP"}
+                  {currency.cur === "USD" && "10.58 $ "}
+                  {currency.cur === "AED" && " 38.88 AED"}
+                  {currency.cur === "KWD" && " 3.25 KWD"}
+                  {currency.cur === "SAR" && " 39.71 SAR"}
                   </div>
                 </span>
               </div>
@@ -463,7 +462,7 @@ const Packages = () => {
 
             <button
               onClick={() =>  handleClickCoupon('button3', false)}
-              className={`    flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]   bg-[#ffff]    border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
+              className={`  hidden  flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]   bg-[#ffff]    border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
             >
               <div className=" w-full" dir="ltr">
                 {buttonStates['button3'] ? (
@@ -579,7 +578,7 @@ const Packages = () => {
           {/* <div className=" flex justify-end w-full   ">
             <div className="   text-secondary px-2 py-4 rounded-[12px] bg-white"></div>
           </div> */}
-          <div className="   pt-4    gap-5  rounded-t-[16px]    text-lg  font-medium text-start px-0 py-4 pb-0    items-start    w-full">
+          <div className="   pt-8    gap-5  rounded-t-[16px]    text-lg  font-medium text-start px-0     items-start    w-full">
           <div className=" ms-6">
           <div className=" items-center grid grid-cols-12 ">
           
@@ -598,10 +597,10 @@ const Packages = () => {
           </div>
      
         <header>  الباقة الاحترافية </header>
-        <div className=" font-light text-[13px]    text-[#797878]">
-        عرض حصري. اشترك لمدة شهر، واحصل على شهرين إضافيين مجانًا لفترة محدودة الآن.
+        <div className=" font-[600] text-[11px]     text-[#797878]">
+        اشترك شهر، واحصل على شهرين  مجانًا.
         </div>
-        <div className="  flex  text-[#FFF]  py-1 font-bold items-baseline gap-1">
+        <div className="  flex  text-[#692BEF]  py-1 font-bold items-baseline gap-1">
           
         عدد كلمات غير محدود
         </div>
@@ -611,20 +610,22 @@ const Packages = () => {
             dir="ltr"
             className="priceText gap-1  items-baseline flex justify-end   text-[#1B223C]  relative z-0    text-3xl font-bold"
           >
-            <div className="text-[18px] font-light "  dir="ltr">
-            أشهر
-            <span   className=" inter-text">3</span>
+            <div className="text-[18px] font-light "  dir="rtl">
+            <span   className=" inter-text ps-1">3</span>
+            <span   className="  ps-1">أشهر</span>
+            
+          
             </div>
 
             <div className="font-sans text-[21px]">
-            {currency.cur === "-" && currency_api ==="EGP"  ?  "EGP 799" :""}
+            {currency.cur === "-" && currency_api ==="EGP"  ?  " 799 EGP" :""}
             {currency.cur === "-" && currency_api !=="EGP"  ?  "$ 16.95" :""}
             
-            {currency.cur === "EGP" && "EGP 799"}
-            {currency.cur === "USD" && "$ 16.95"}
-            {currency.cur === "AED" && "AED 62.26"}
-            {currency.cur === "KWD" && "KWD 5.21"}
-            {currency.cur === "SAR" && "SAR 63.58"}
+            {currency.cur === "EGP" && " 799 EGP"}
+            {currency.cur === "USD" && " 16.95 $"}
+            {currency.cur === "AED" && " 62.26 AED"}
+            {currency.cur === "KWD" && " 5.21 KWD"}
+            {currency.cur === "SAR" && " 63.58 SAR"}
             </div>
           </span>
         </div>
@@ -635,9 +636,9 @@ const Packages = () => {
 
           <button
             onClick={() =>  handleClickCoupon('button4', false)}
-            className={`    flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]     border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
+            className={`  hidden  flex items-center    mb-4 mx-auto   mt-2  relative z-10  child-button text-[#797878]     border-[#1B223C] border-[1px]   focus:ring-4 focus:ring-[#C0ADF5] font-medium rounded-[12px]  w-[85%] text-[12px] px-1 py-2 text-center   `}
           >
-            <div className=" w-full" dir="ltr">
+            <div className="   w-full" dir="ltr">
               {buttonStates['button4'] ? (
                 "هل تمتلك كوبون خصم؟"
               ) : (

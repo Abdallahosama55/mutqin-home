@@ -1,44 +1,63 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ForgetComp = ({ image, pragraph, title,header, button }) => {
+const ForgetComp = ({ image, pragraph, title,header, button  ,num_key,img_src}) => {
   return (
     
     <div >
-    <div
+  
+  <div className="     w-full w-100 pt-1  mt-2  md:grid md:grid-cols-10 ">
+     
+  <div className={`mb-5 flex flex-col     lg:py-2 text-start md:col-span-6 ${num_key === 2  ? "order-1" : "" }`} dir={num_key === 2  ?'ltr' :'rtl'}>
+ 
+  <div
               
-    className=" max-w-[190px] py-2     sm:my-0 bg-[#5225CE]   h-[39px]    text-white rounded-[50px] ">
+  className={` ${num_key===2 ?"md:mx-12":"md:ms-2 ms-0 "}    md:max-w-[175px] max-w-[125px] md:py-2 py-1     text-center  pb-0   sm:my-0 bg-[#5225CE]   md:h-[39px] h-[30px]    text-white rounded-[10px] `} >
 {header}
-  </div>
-  <div className="  md:h-[380px] w-full w-100 pt-1 pb-16 mt-2  md:grid md:grid-cols-10 ">
-      <div className=" h-[300px] flex flex-col     lg:py-2 text-start md:col-span-6">
-        <div>
-
-          <h1 className=" py-4 pb-12 md:pr-4 text-2xl font-bold">{title}</h1>
-          <ul className=" list-disc   md:pr-8 ">
+</div>     
+  <div >
+  <div  className={` md:me-16`}>
+          <h1 className=" py-6 pb-7 md:pr-4 text-2xl font-bold" dir="rtl">{title}</h1>
+          <div className="  list-disc md:ps-4  w-full  grid grid-cols-12  my-6   " dir="rtl">
             {pragraph.map((item, index) => (
-              <li
+              <div
                 key={index}
-                className="  md:pb-6 text-[13px] md:text-[16px]  font-normal ">
-                {item}
-              </li>
+                className={` items-center flex text-[#5225CE] pb-10  md:pb-12   col-span-6 text-[16px] font-[400] md:text-[16px] ` } >
+                
+                <img src={img_src[index]} alt={`icon-${index}`} className=" w-[40px]" />
+                
+
+                
+               
+                <span className=" px-2">    {item}</span>
+            
+              </div>
             ))}
-          </ul>
+          </div>
+          </div>
+        <Link
+        to="https://auth.mutqinai.com/signup"
+        className="  md:mx-12 text-center md:max-w-[175px] max-w-[100px] md:mr-3  sm:my-0 bg-[#8452EF]  hover:bg-[#7451d4] md:px-8 px-4  md:py-2 py-1   text-white rounded-[10px] ">
+    جرب الآن مجاناً
+      </Link>
         </div>
 
-        <Link
-          to="https://auth.mutqinai.com/signup"
-          className=" text-center max-w-[175px] md:mr-2  sm:my-0 bg-[#8452EF]  hover:bg-[#7451d4] px-6  py-2 mt-12 md:mt-6  text-white rounded-[10px] ">
-      جرب الآن مجاناً
-        </Link>
       </div>
-      <div className="   sm:mt-0 md:col-span-4">
-        <img
-          className=" mt-32   md:mt-0 "
-          src={image}
-          alt="onemobile"
-        />
-      </div>
+      <div className="sm:mt-0 md:col-span-4">
+      <video
+        style={{
+          width: '100%',
+          height: '100%', // Set the desired height here
+          objectFit: 'cover',
+        }}
+        autoPlay
+        loop
+        muted
+      >
+        <source src={image} type="video/mp4" />
+      
+      </video>
+    </div>
       </div>
     </div>
   );

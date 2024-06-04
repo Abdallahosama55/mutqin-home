@@ -71,10 +71,13 @@ const Modal = ({ children }) => {
     {show===true?    <div
       className={`fixed inset-0 ${
         modalOpen === false ? "hidden" : "block"
-      } box-bg bg-gray-500 bg-opacity-20 flex justify-center items-center`}
+      } box-bg bg-gray-500 bg-opacity-20 flex justify-center items-center z-50`}
       onClick={()=>setShow(!show)}
     >
-      <div className="bg-white box-modal md:w-[65%] overflow-y-auto md:h-[70%] w-[93%] md:min-h-[75%] min-h-[90%]   sm:min-h-[90%] p-0 rounded-xl shadow-lg relative">
+      <div className="bg-white box-modal md:w-[65%] absolute  overflow-y-auto md:h-[75%] w-[93%] md:min-h-[65%] min-h-[91%]   sm:min-h-[90%] p-0 rounded-xl shadow-lg "
+      style={{zIndex:999}}
+      
+      >
         <div className="mb-4">
           <div className=" text-gray-600 hover:text-gray-800">
             <img src={firework} className="w-[100px]" alt="Firework" />

@@ -26,46 +26,49 @@ export const Home = () => {
 
   return (
     <div className=" relative   p-[0px] m-[0px]    home ">
-  <div className="z-20 absolute">
-  <Modal isOpen={true} >
-  This is the content of the modal.
-</Modal>
+  
 
-  </div>
+ 
  
     <div className=" relative  home-section1 w-[100]  ">
-  
+    <div className=" py-6 md:px-24 px-6 ">
+    
+    
+    <Navbar/>
+    </div>
     <HomeTextSection />
 
     </div>
        <BoxSection />
 <div className=" relative  ">
 <img src={bgsection3} className="absolute z-0 top-[90%] w-full  "/>
-<div className=" px-56">
+<div className=" px-12 md:px-56">
 
-<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+<hr className=" gradient-border"/>
 </div>
 <BlocksSection />
 <div className=" flex justify-center">
 <img src={centerlines} className="  "/>
 
 </div>
-<div className=" px-56">
 
-<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+
 </div>
+<div className=" px-12 md:px-56">
 
+<hr className=" gradient-border"/>
 </div>
 <ForgtenSection />
 
 <ContentSectioncomp/>
+
 <div className=" flex justify-center">
 <img src={centerlines} className="  "/>
 
 </div>
-<div className=" px-56">
+<div className=" px-12 md:px-56">
 
-<hr className="  text-center w-[100%]   shadow-lg   bg-black"/>
+<hr className=" gradient-border"/>
 </div>
       
 
