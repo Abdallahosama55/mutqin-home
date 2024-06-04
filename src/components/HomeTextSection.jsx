@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import threelines from '../assets/three_lines.png';
 import search from '../assets/mingcute_search-line.png'
 import lines from '../assets/hero-7-top-line.png.png'
-import videoSource from "../assets/main.mov"
+import videoSource from "../assets/forgetSection/main.mp4"
 const HomeTextSection = () => {
   const [hovered, setHovered] = useState(false);
   const texts = [
@@ -130,7 +130,11 @@ const HomeTextSection = () => {
       </Formik>
 
       <div className="relative z-5 p-0 h-100 flex border-[10px] mt-6 border-[#692BEF] rounded-[12px] align-center relative">
-  <video src={videoSource} autoPlay loop className="w-full md:h-[100]" />
+  <video  autoPlay loop muted className="w-full md:h-[100]" >
+  
+  <source src={videoSource} type="video/mp4" />
+  
+  </video>
 </div>
 
       

@@ -10,9 +10,9 @@ import fa from "../assets/forgetSection/fa6-solid_file-pen.svg";
 import ma from "../assets/forgetSection/Frame 1171276676.png";
 // import ma from "../assets/material-symbols-light_photo-library-rounded.png";
 
-import chat from "../assets/forgetSection/chat.mov";
-import detector from "../assets/forgetSection/detect.mov";
-import article from "../assets/forgetSection/art.mov";
+import chat from "../assets/forgetSection/chat.mp4";
+import detector from "../assets/forgetSection/detect.mp4";
+import article from "../assets/forgetSection/art.mp4";
 import ForgetComp from "./ForgetComp";
 import centerlines from '../assets/center_lines.png'
 import chatIcon1 from  "../assets/forgetSection/hugeicons_touch-interaction-03.png"

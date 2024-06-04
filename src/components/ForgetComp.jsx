@@ -12,7 +12,7 @@ const ForgetComp = ({ image, pragraph, title,header, button  ,num_key,img_src}) 
  
   <div
               
-  className={` ${num_key===2 ?"md:mx-12":"md:ms-2 ms-0 "}    md:max-w-[175px] max-w-[125px] md:py-2 py-1     text-center  pb-0   sm:my-0 bg-[#5225CE]   md:h-[39px] h-[30px]    text-white rounded-[10px] `} >
+  className={` ${num_key===2 ?"md:mx-12":"md:ms-2 ms-0 "}  md:text-[16px]  text-[12px]  max-w-[150px] md:max-w-[175px]  md:py-2 py-2     text-center  pb-0   sm:my-0 bg-[#5225CE]   md:h-[39px] h-[30px]    text-white rounded-[10px] `} >
 {header}
 </div>     
   <div >
@@ -22,9 +22,9 @@ const ForgetComp = ({ image, pragraph, title,header, button  ,num_key,img_src}) 
             {pragraph.map((item, index) => (
               <div
                 key={index}
-                className={` items-center flex text-[#5225CE] pb-10  md:pb-12   col-span-6 text-[16px] font-[400] md:text-[16px] ` } >
+                className={` items-center flex text-[#5225CE] pb-10  md:pb-12  text-[10px]  col-span-6 text-[16px] font-[400] md:text-[16px] ` } >
                 
-                <img src={img_src[index]} alt={`icon-${index}`} className=" w-[40px]" />
+                <img src={img_src[index]} alt={`icon-${index}`} className=" w-[30px] md:w-[40px]" />
                 
 
                 
@@ -37,7 +37,7 @@ const ForgetComp = ({ image, pragraph, title,header, button  ,num_key,img_src}) 
           </div>
         <Link
         to="https://auth.mutqinai.com/signup"
-        className="  md:mx-12 text-center md:max-w-[175px] max-w-[100px] md:mr-3  sm:my-0 bg-[#8452EF]  hover:bg-[#7451d4] md:px-8 px-4  md:py-2 py-1   text-white rounded-[10px] ">
+        className="  md:mx-12 text-center md:max-w-[175px] max-w-[150px] md:mr-3  sm:my-0 bg-[#8452EF]  hover:bg-[#7451d4] md:px-8 px-4  md:py-2 py-1   text-white rounded-[10px] ">
     جرب الآن مجاناً
       </Link>
         </div>
