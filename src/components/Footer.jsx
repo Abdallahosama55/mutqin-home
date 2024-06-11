@@ -45,7 +45,7 @@ const socialMedia = [
 
 const Footer = () => {
   return (
-    <footer className="border-[#001B79] footerbg  py-4 relative z-20   px-2 divide-[#001B79] ">
+    <footer className="border-[#001B79] footerbg  py-4 relative z-0   px-2 divide-[#001B79] ">
   
       <div
         dir="rtl"

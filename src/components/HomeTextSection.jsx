@@ -130,7 +130,7 @@ const HomeTextSection = () => {
       </Formik>
 
       <div className="relative z-5 p-0 h-100 flex border-[10px] mt-6 border-[#692BEF] rounded-[12px] align-center relative">
-  <video  autoPlay loop muted className="w-full md:h-[100]" >
+  <video  autoPlay={true} loop={true} muted={true} playsInline={true} className="w-full md:h-[100]" >
   
   <source src={videoSource} type="video/mp4" />
   

@@ -36,7 +36,10 @@ export const Home = () => {
     
     <Navbar/>
     </div>
-    <HomeTextSection />
+    <div className=" pt-24">    <HomeTextSection /></div>
+
+
+ 
 
     </div>
        <BoxSection />

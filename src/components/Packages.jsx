@@ -56,7 +56,7 @@ const Packages = () => {
     <section id="packages" >
       <div
         dir="rtl"
-        className={`py-[0px] px-0  z-20  relative mx-auto  pt-4 pb-0  pt-4  mx-auto max-w-screen-xl  max-w-[1100px]   lg:py-[40px] `}
+        className={`py-[0px] px-0  z-0  relative mx-auto  pt-4 pb-0  pt-4  mx-auto max-w-screen-xl  max-w-[1100px]   lg:py-[40px] `}
       >
         <div className="mx-auto max-w-4xl  text-secondary text-center mb-3 ">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold   ">

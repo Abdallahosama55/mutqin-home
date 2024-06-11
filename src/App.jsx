@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
 import { Home } from "./pages/home/Home";
+import OfferPage from "./pages/OfferPage/OfferPage";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
             path="/"
             element={<Home />}
           />
+          <Route
+          path="offerpage"
+          element={<OfferPage/>}
+        />
           <Route
           path="/home"
           element={<Home />}

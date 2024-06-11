@@ -10,7 +10,7 @@ const LastPargraph = () => {
     <section className=" bg-transparent relative ">
       <div
         dir="rtl"
-        className="  relative z-20 py-8 px-4 mx-auto max-w-screen-xl sm:py-16 md:px-6">
+        className="  relative z-0 py-8 px-4 mx-auto max-w-screen-xl sm:py-16 md:px-6">
         <div className=" text-primary max-w-screen-xl mx-auto text-center mb-8 lg:mb-16">
    
           <p className=" mb-10  text-[18px] mt-12 md:mt-auto  font-[500] text-[#5225CE] leading-[2rem]  max-w-[850px] mx-auto  ">
